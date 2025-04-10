@@ -1,5 +1,12 @@
 # Task-MERN [CIS555]
 
 ### 📂 Kapitujt janë të ndara në branch-e të ndryshme
-- 5️⃣ [`Kapitulli 1`](https://github.com/sayjin93/Task-MERN/tree/chapter1) – Getting Started with MERN and Setup
-
+- 1️⃣ [`Kapitulli 1`](https://github.com/sayjin93/Task-MERN/tree/chapter1) – Getting Started with MERN and Setup
+- 2️⃣ [`Kapitulli 2`](https://github.com/sayjin93/Task-MERN/tree/chapter2) – Starting a NodeJS App
+- 3️⃣
+- 4️⃣
+- 5️⃣
+- 6️⃣
+- 7️⃣
+- 8️⃣
+- 9️⃣
