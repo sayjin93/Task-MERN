@@ -5,7 +5,7 @@
 - 2️⃣ [`Kapitulli 2`](https://github.com/sayjin93/Task-MERN/tree/chapter2) – Starting a NodeJS App
 - 3️⃣ [`Kapitulli 3`](https://github.com/sayjin93/Task-MERN/tree/chapter3) – MongoDB Connection and Models
 - 4️⃣ [`Kapitulli 4`](https://github.com/sayjin93/Task-MERN/tree/chapter4) – JWT Authentication and Hashing Password
-- 5️⃣
+- 5️⃣ [`Kapitulli 4`](https://github.com/sayjin93/Task-MERN/tree/chapter5) – Auth Middleware and Protecting Routes
 - 6️⃣
 - 7️⃣
 - 8️⃣
