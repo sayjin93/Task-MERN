@@ -6,6 +6,6 @@
 - 3️⃣ [`Kapitulli 3`](https://github.com/sayjin93/Task-MERN/tree/chapter3) – MongoDB Connection and Models
 - 4️⃣ [`Kapitulli 4`](https://github.com/sayjin93/Task-MERN/tree/chapter4) – JWT Authentication and Hashing Password
 - 5️⃣ [`Kapitulli 5`](https://github.com/sayjin93/Task-MERN/tree/chapter5) – Auth Middleware and Protecting Routes
-- 6️⃣
+- 6️⃣ [`Kapitulli 6`](https://github.com/sayjin93/Task-MERN/tree/chapter6) – Creating Frontend and React Router
 - 7️⃣
 - 8️⃣
