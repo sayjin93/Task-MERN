@@ -1,9 +1,16 @@
 import { FaSignInAlt } from 'react-icons/fa'
+
 import { useState } from "react"
+import { useDispatch } from 'react-redux';
+import { setUser } from '../store/slices/userSlice';
+import { useLoginMutation } from '../store/apis/userApi';
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: '', password: '' })
     const { email, password } = formData;
+
+    const [login, { isLoading, error }] = useLoginMutation();
+    const dispatch = useDispatch();
 
     const onChange = e => {
         setFormData(prevState => ({
@@ -12,8 +19,15 @@ const Login = () => {
         }))
     }
 
-    const onSubmit = e => {
-        e.preventDefault()
+    const onSubmit = async (e) => {
+        debugger;
+        e.preventDefault();
+        try {
+            const {data} = await login(formData);
+            if (data) dispatch(setUser(data));
+        } catch (err) {
+            console.error('Login failed', err);
+        }
     }
 
     return (
@@ -33,7 +47,8 @@ const Login = () => {
                         />
                     </div>
                     <div className='form-group'>
-                        <button type='submit' className='btn btn-block'>Submit</button>
+                        <button type='submit' disabled={isLoading} className='btn btn-block'>Submit</button>
+                        {error && <p style={{ color: 'red' }}>Login failed</p>}
                     </div>
                 </form>
             </section>
