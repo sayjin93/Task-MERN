@@ -7,5 +7,5 @@
 - 4️⃣ [`Kapitulli 4`](https://github.com/sayjin93/Task-MERN/tree/chapter4) – JWT Authentication and Hashing Password
 - 5️⃣ [`Kapitulli 5`](https://github.com/sayjin93/Task-MERN/tree/chapter5) – Auth Middleware and Protecting Routes
 - 6️⃣ [`Kapitulli 6`](https://github.com/sayjin93/Task-MERN/tree/chapter6) – Creating Frontend and React Router
-- 7️⃣
+- 7️⃣ [`Kapitulli 7`](https://github.com/sayjin93/Task-MERN/tree/chapter7) – Redux Setup with Slice and RTK Query
 - 8️⃣
