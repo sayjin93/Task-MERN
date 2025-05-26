@@ -34,8 +34,8 @@ const Register = () => {
             } else {
                 dispatch(setUser(response.data));
                 localStorage.setItem('user', JSON.stringify(response.data));
-                navigate('/login');
-                toast.success('Registration successful! Please log in.');
+                navigate('/');
+                toast.success('Registration successful!');
             }
         }
     }
