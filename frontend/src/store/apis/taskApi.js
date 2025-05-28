@@ -12,7 +12,6 @@ export const taskApi = createApi({
             return headers;
         },
     }),
-    tagTypes: ['Task'],
     endpoints: (builder) => ({
         getTasks: builder.query({
             query: () => '/tasks',

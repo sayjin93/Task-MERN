@@ -16,7 +16,9 @@ const Dashboard = () => {
         <>
             <section className='heading'>
                 <h1>Welcome {user && user.name}</h1>
-                <p>Tasks Dashboard</p>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                    <button className='btn' onClick={() => navigate('/alltasks')}>CheckTasks</button>
+                </div>
             </section>
 
             <TaskForm />
