@@ -21,7 +21,7 @@ const TaskList = () => {
                     ))}
                 </div>
             ) : (
-                <p>Asnjë detyrë e regjistruar.</p>
+                <p>No tasks found.</p>
             )}
         </section>
     );
