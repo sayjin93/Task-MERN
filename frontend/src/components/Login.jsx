@@ -14,7 +14,7 @@ const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [login, { isLoading }] = useLoginMutation();
-    const { user } = useSelector(state => state.user);
+    const user = useSelector(state => state.user);
 
     const onChange = (e) => {
         setFormData(prevState => ({
