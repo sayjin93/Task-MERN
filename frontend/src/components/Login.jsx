@@ -14,7 +14,7 @@ const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [login, { isLoading }] = useLoginMutation();
-    const isLoggedIn = useSelector(state => state.user);
+    const user = useSelector(state => state.user);
 
     const onChange = (e) => {
         setFormData(prevState => ({
@@ -43,10 +43,10 @@ const Login = () => {
     }
 
     useEffect(() => {
-        if (isLoggedIn) {
+        if (user) {
             navigate('/');
         }
-    }, [isLoggedIn, navigate]);
+    }, [user, navigate]);
 
     return (
         <>

@@ -5,7 +5,7 @@ export const taskApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: import.meta.env.VITE_API_URL,
         prepareHeaders: (headers, { getState }) => {
-            const token = getState().user.user?.token;
+            const token = getState().user.token;
             if (token) {
                 headers.set('Authorization', `Bearer ${token}`);
             }
