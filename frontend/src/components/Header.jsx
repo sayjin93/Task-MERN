@@ -7,7 +7,7 @@ import { logoutUser } from '../store/slices/userSlice';
 const Header = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const isLoggedIn = useSelector(state => state.user);
+    const user = useSelector(state => state.user);
 
     const handleLogout = () => {
         dispatch(logoutUser());
@@ -19,7 +19,7 @@ const Header = () => {
                 <Link to='/'>Task Creator</Link>
             </div>
             <ul>
-                {isLoggedIn ? (
+                {user ? (
                     <li>
                         <button className='btn' onClick={handleLogout}>
                             <FaSignOutAlt /> Logout
