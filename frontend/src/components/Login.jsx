@@ -20,10 +20,9 @@ const Login = () => {
     }
 
     const onSubmit = async (e) => {
-        debugger;
         e.preventDefault();
         try {
-            const {data} = await login(formData);
+            const { data } = await login(formData);
             if (data) dispatch(setUser(data));
         } catch (err) {
             console.error('Login failed', err);
