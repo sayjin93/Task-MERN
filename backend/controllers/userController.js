@@ -49,10 +49,6 @@ const loginUser = asyncHandler(async (req, res) => {
     }
 })
 
-const getCurrentUser = asyncHandler(async (req, res) => {
-    res.json({ message: 'Current user data' })
-})
-
 const generateJWTtoken = id => jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '5d' });
 
-module.exports = { registerUser, loginUser, getCurrentUser }
+module.exports = { registerUser, loginUser }
