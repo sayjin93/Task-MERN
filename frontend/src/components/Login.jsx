@@ -14,7 +14,7 @@ const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [login, { isLoading }] = useLoginMutation();
-    const { user } = useSelector(state => state.user);
+    const user = useSelector(state => state.user);
 
     const onChange = (e) => {
         setFormData(prevState => ({
@@ -25,6 +25,7 @@ const Login = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
+
         try {
             const response = await login(formData);
             if (response.error) {
@@ -53,6 +54,7 @@ const Login = () => {
                 <h1><FaSignInAlt /> Login</h1>
                 <p>Login and start creating tasks</p>
             </section>
+
             <section className='form'>
                 <form onSubmit={onSubmit}>
                     <div className='form-group'>

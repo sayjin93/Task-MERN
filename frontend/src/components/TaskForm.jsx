@@ -11,7 +11,7 @@ const TaskForm = () => {
         if (!text.trim()) return;
 
         try {
-            await createTask({ text }).unwrap();
+            await createTask({ text });
             setText('');
             toast.success('Task created successfully!');
         } catch (err) {
@@ -24,8 +24,8 @@ const TaskForm = () => {
         <section className='form'>
             <form onSubmit={onSubmit}>
                 <div className='form-group'>
-                    <label htmlFor='text'>Task</label>
-                    <input type='text' id='text' value={text} onChange={e => setText(e.target.value)}
+                    <label htmlFor='text'>Enter Task</label>
+                    <input required type='text' id='text' value={text} onChange={e => setText(e.target.value)}
                     />
                 </div>
                 <div className='form-group'>
